@@ -1,0 +1,329 @@
+.news {
+    background-color: darkgreen;
+    width: 800px;
+    height: 450px;
+    margin-left: 320px;
+}
+.morant {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    
+}
+.text {
+    width: 800px;
+    height: 350px;
+    margin-left: 320px;
+    margin-top: -380px;
+    line-height: 1cm;
+    border: solid #00225f;
+}
+.nneeww {
+  color: #daf6ff;
+  font-size: 20px;
+  background-color: #305dd3;
+  font-style: italic;
+}
+a {
+    color: cyan;
+    font-size: 20px;
+}
+li {
+    list-style-type: none;
+}
+a:hover {
+    color: floralwhite;
+}
+.top-10 {
+    width: 700px;
+    height: 500px;
+    margin-top: -380px;
+    margin-left: 1150px;
+    
+}
+.halfleft {
+    width: 320px;
+    height: 500px;
+    
+}
+.halfright {/*面板盒子*/
+    width: 320px;
+    height: 500px;  
+    margin-left: 380px;
+    margin-top: -500px;
+}
+.nbadate {
+    width: 320px;
+    height: 2cm;
+    background-color: deeppink;
+
+}
+.date {
+    width: 320px;
+    height: 275px;
+    line-height: 1cm;
+    border: solid #00225f;
+    font-size: 20px;
+    color: #f3f4f6;
+    
+}
+.mid {
+
+    width: 500px;
+    height: 400px;
+    margin-top: -120px;
+    
+}
+/*个人面板 */
+.leaderboard {
+    max-width: 400px;
+
+    border-radius: 25px;
+  }
+  .leaderboard header {
+    --start: 30%;
+    height: 120px;
+    background-image: linear-gradient(to right, #027d9c, #3659db);
+    color: #fff;
+    position: relative;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+  }
+  .leaderboard header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: repeating-radial-gradient(circle at var(--start), transparent 0%, transparent 10%, #3659db 10%, #3659db 17%);
+    opacity: .15;
+    z-index: 1;
+  }
+  .leaderboard header .leaderboard__title {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: calc(var(--start) * .75);
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .leaderboard header .leaderboard__title span {
+    display: block;
+  }
+  .leaderboard header .leaderboard__title--top {
+    font-size: 24px;
+    font-weight:800;
+    letter-spacing: 6.5px;
+  }
+  .leaderboard header .leaderboard__title--bottom {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 3.55px;
+    opacity: .65;
+    transform: translateY(-2px);
+  }
+  .leaderboard header .leaderboard__icon {
+    fill: #fff;
+    opacity: .35;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: var(--start);
+    transform: translate(-50%, -50%);
+  }
+  .leaderboard__profiles {
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding: 15px 15px 20px;
+    display: grid;
+    row-gap: 8px;
+  }
+  .leaderboard__profile {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    padding: 10px 30px 10px 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+    cursor: pointer;
+    transition: transform 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98), box-shadow 0.25s cubic-bezier(0.7, 0.98, 0.86, 0.98);
+    background-color: #fff;
+  }
+  .leaderboard__profile:hover {
+    transform: scale(1.2);
+    box-shadow: 0 9px 47px 11px rgba(51, 51, 51, 0.18);
+  }
+  .leaderboard__picture {
+    max-width: 100%;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ebeef3, 0 0 0 25px #f3f4f6;
+  }
+  .leaderboard__name {
+    color: #979cb0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.64px;
+    margin-left: 12px;
+  }
+  .leaderboard__value {
+    color: #35d8ac;
+    font-weight: 700;
+    font-size: 34px;
+    text-align: right;
+  }
+  .leaderboard__value > span {
+    opacity: .8;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 3px;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #eaeaea;
+    display: grid;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .leaderboard {
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+  }
+  /*排名表结束*/
+  #container {
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+ 
+#photo {
+	width: 1200px;
+	animation: switch 5s ease-out infinite;
+}
+ 
+#photo > img {
+  float: left;
+	width: 400px;
+	height: 300px;
+}
+ 
+@keyframes switch {
+	0%, 25% {
+		margin-left: 0;
+	}
+	35%, 60% {
+		margin-left: -400px;
+	}
+	70%, 100% {
+		margin-left: -800px;
+	}
+}
+.nb {
+  width: 400px;
+  height: 150px;
+  margin-left: 400px;
+  margin-top: -400px;
+
+}
+#clock {
+  font-family: "Share Tech Mono", monospace;
+  color: #ffffff;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 200px;
+  transform: translate(-50%, -50%);
+  color: #daf6ff;
+  text-shadow: 0 0 20px gold, 0 0 20px rgba(10, 175, 230, 0);
+}
+#clock .time1 {
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  padding: 5px 0;
+  margin-top: 20px;
+}
+#clock .date1 {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
+#hotgame {                      /*------广告----------*/
+  width: 1000px;
+  height: 100px;
+  margin-left: 700px;
+  margin-top: -290px;
+}
+.why {
+  width: 100px;
+  height: 100px;
+  background-color: darkorange;
+}
+.team {
+  width: 1920px;
+  height: 600px;
+  margin-top: -20px;
+  background-image: url(../images/bk.jpg);
+}
+.title {
+  text-align: center;
+  color: gold;
+}
+.line {
+  width: 500px;
+  color: chartreuse;
+  height: 3px;
+margin-left: 720px;
+}
+.one {
+  width: 500px;
+  height: 200px;
+  margin-left: 400px;
+  margin-top: 30px;
+  display: flex;
+  border:gold solid 3px;
+  
+}
+.two {
+  width: 500px;
+  height: 200px;
+  margin-left: 1030px;
+  margin-top: -200px;
+  display: flex;
+  border:gold solid 3px;
+
+}
+.three {
+  width: 500px;
+  height: 200px;
+  margin-left: 400px;
+  margin-top: 30px;
+  display: flex;
+  border:gold solid 3px;
+
+}
+.four {
+  width: 500px;
+  height: 200px;
+  margin-left: 1030px;
+  margin-top: -200px;
+  display: flex;
+  border:gold solid 3px;
+
+}
+.team1 {
+  width: 200px;
+  height: 200px;
+}
+.text1 {
+  width: 300px;
+  height: 200px;
+  
+
+}
+.video {
+  width: 400px;
+  height: 300px;
+  margin-top: -350px;
+}
